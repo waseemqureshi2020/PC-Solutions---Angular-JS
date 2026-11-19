@@ -6,11 +6,11 @@ A modern, responsive business website built for a fictional IT repair company. T
 
 | Home Page | About Page |
 | :---: | :---: |
-| ![Home Page](screenshots/home.png) | ![About Page](screenshots/about.png) |
+| ![Home Page](screenshots/Home.png) | ![About Page](screenshots/About.png) |
 
 | Services Page | Contact Page |
 | :---: | :---: |
-| ![Services Page](screenshots/services.png) | ![Contact Page](screenshots/contact.png) |
+| ![Services Page](screenshots/Services.png) | ![Contact Page](screenshots/Contact.png) |
 
 ## 🚀 Live Demo
 [View the Live Website Here]
