@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pcSolutionsApp">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us | PC Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body ng-controller="MainController">
+    <div class="container">
+
+        <!-- Masthead and Navigation -->
+        <header class="site-header">
+            <h1 class="logo">PC Solutions <small>Fast. Reliable. Local.</small></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1>About PC Solutions</h1>
+        </div>
+
+        <div class="about-layout">
+            <!-- Main Content -->
+            <div class="about-text">
+                <h3>Your Trusted Local Tech Experts</h3>
+                <p class="lead">Founded in 2010, PC Solutions started with a simple mission: to provide honest, reliable, and transparent IT support to our community.</p>
+                <p>We understand how frustrating technology can be when it fails. That's why we focus on not just fixing the immediate problem, but educating our clients on how to prevent future issues. Our team consists of certified technicians who stay up-to-date with the latest industry trends and technologies.</p>
+                <p>Whether you are a small business looking for managed IT services or a home user with a broken laptop, we treat every client with the same level of respect, urgency, and professionalism.</p>
+                
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <h2>15+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2>2,500+</h2>
+                        <p>Devices Repaired</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2>100%</h2>
+                        <p>Satisfaction Guarantee</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="about-sidebar">
+                <div class="sidebar-box">
+                    <h3>Why Choose Us?</h3>
+                    <ul class="check-list">
+                        <li>Certified & Vetted Technicians</li>
+                        <li>Transparent, Flat-Rate Pricing</li>
+                        <li>Fast Turnaround Times</li>
+                        <li>No Fix, No Fee Policy</li>
+                        <li>Free Diagnostics</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>&copy; {{ currentYear }} PC Solutions. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

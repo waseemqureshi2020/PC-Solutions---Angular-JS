@@ -1,0 +1,307 @@
+/* =========================================
+   GLOBAL STYLES & VARIABLES
+   ========================================= */
+:root {
+    --primary-color: #2c3e50;
+    --accent-color: #3498db;
+    --bg-color: #f8f9fa;
+    --text-color: #444;
+    --border-color: #e0e0e0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    background-color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    
+    /* Sticky Footer Magic */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.mb-40 { margin-bottom: 40px; }
+
+/* =========================================
+   HEADER & NAVIGATION
+   ========================================= */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid var(--border-color);
+    margin-bottom: 40px;
+}
+
+.logo {
+    font-size: 24px;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo small {
+    display: block;
+    font-size: 12px;
+    color: var(--accent-color);
+    text-transform: none;
+    letter-spacing: 0.5px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    background-color: var(--accent-color);
+    color: #ffffff;
+}
+
+/* =========================================
+   PAGE HEADERS
+   ========================================= */
+.page-header {
+    border-bottom: 2px solid var(--accent-color);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+
+.page-header h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* =========================================
+   HERO SECTION (Homepage)
+   ========================================= */
+.hero-section {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    padding: 40px;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.hero-image { flex: 1; text-align: center; }
+.hero-image img { max-width: 100%; height: auto; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1)); }
+.hero-text { flex: 1; }
+.hero-text h2 { font-size: 36px; color: var(--primary-color); margin-bottom: 15px; }
+
+/* =========================================
+   SERVICES GRID (Homepage & Services Page)
+   ========================================= */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid var(--border-color);
+    border-top: 4px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.service-card h3 { color: var(--primary-color); margin-bottom: 15px; font-size: 20px; }
+.service-card p { margin-bottom: 20px; }
+
+/* =========================================
+   ABOUT PAGE
+   ========================================= */
+.about-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+}
+
+.about-text h3 { color: var(--primary-color); margin-bottom: 15px; }
+.about-text p { margin-bottom: 15px; }
+.lead { font-size: 18px; color: #555; font-weight: 600; }
+
+.stats-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.stat-item h2 { color: var(--accent-color); font-size: 32px; margin-bottom: 5px; }
+
+.about-sidebar .sidebar-box {
+    background: var(--bg-color);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+}
+
+.about-sidebar h3 { color: var(--primary-color); margin-bottom: 20px; }
+
+.check-list { list-style: none; }
+.check-list li { margin-bottom: 15px; font-weight: 600; color: #555; position: relative; padding-left: 25px; }
+.check-list li::before { content: "✓"; color: var(--accent-color); position: absolute; left: 0; font-weight: bold; }
+
+/* =========================================
+   CONTACT PAGE
+   ========================================= */
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h3 { color: var(--primary-color); margin-bottom: 15px; }
+.contact-info p { margin-bottom: 25px; }
+
+.info-list {
+    list-style: none;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
+.info-list li {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.info-list li:last-child { border-bottom: none; }
+.info-list strong { color: var(--primary-color); display: inline-block; width: 140px; }
+
+.contact-form-container {
+    background: #ffffff;
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.contact-form-container h3 { color: var(--primary-color); margin-bottom: 25px; }
+
+.form-group { margin-bottom: 20px; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #333; }
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 15px;
+    transition: border-color 0.3s ease;
+}
+.form-control:focus { outline: none; border-color: var(--accent-color); box-shadow: 0 0 5px rgba(52, 152, 219, 0.3); }
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn:hover { background-color: #2980b9; }
+.btn:disabled { background-color: #bdc3c7; cursor: not-allowed; }
+.btn-block { width: 100%; display: block; }
+.btn-sm { padding: 8px 16px; font-size: 14px; }
+.btn-lg { padding: 15px 30px; font-size: 18px; }
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #c3e6cb;
+}
+
+/* =========================================
+   CALL TO ACTION BOX (Services Page)
+   ========================================= */
+.cta-box {
+    background-color: var(--bg-color);
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    margin-top: 40px;
+}
+
+.cta-box h2 { color: var(--primary-color); margin-bottom: 15px; }
+.cta-box p { margin-bottom: 25px; font-size: 18px; }
+
+/* =========================================
+   FOOTER (Sticky & Centered)
+   ========================================= */
+.site-footer {
+    margin-top: auto; /* Pushes to bottom */
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+    color: #888;
+    font-size: 14px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN (Mobile)
+   ========================================= */
+@media (max-width: 768px) {
+    .site-header { flex-direction: column; gap: 20px; }
+    .hero-section { flex-direction: column; text-align: center; padding: 20px; }
+    .about-layout { grid-template-columns: 1fr; }
+    .contact-layout { grid-template-columns: 1fr; }
+    .stats-row { flex-direction: column; gap: 20px; text-align: center; }
+    .info-list strong { display: block; width: 100%; margin-bottom: 5px; }
+}
