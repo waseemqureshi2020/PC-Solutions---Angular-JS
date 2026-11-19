@@ -13,7 +13,6 @@ A modern, responsive business website built for a fictional IT repair company. T
 | ![Services Page](screenshots/Services.png) | ![Contact Page](screenshots/Contact.png) |
 
 ## 🚀 Live Demo
-[View the Live Website Here]
 
 https://pcsolutions.jsdeck.com/
 
